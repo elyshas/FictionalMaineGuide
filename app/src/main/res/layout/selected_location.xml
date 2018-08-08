@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#607D8B"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/locationImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        tools:text="Fake Name, Maine"/>
+
+    <TextView
+        android:id="@+id/locationActualName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:textColor="#BDBDBD"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="Actual Location: Derp"/>
+
+    <TextView
+        android:id="@+id/locationInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        tools:text="Blah blah blah information about this fictional location (movie/story/show/etc.). What actual location is scenery mimicking..........."/>
+
+    <TextView
+        android:id="@+id/mapLink"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="30dp"
+        android:textColor="#8BC34A"
+        android:textSize="18sp"
+        android:linksClickable="true"
+        tools:text="www.ExampleWebsiteName.com" />
+
+</LinearLayout>
