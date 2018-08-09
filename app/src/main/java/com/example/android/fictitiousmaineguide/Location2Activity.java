@@ -14,6 +14,7 @@ import java.util.ArrayList;
  * Created by elysh on 8/6/2018.
  */
 
+//Multiple Stories by Stephen King: Derry, Maine *** Actual Location is Bangor, Maine
 public class Location2Activity extends AppCompatActivity {
 
     @Override
@@ -28,13 +29,8 @@ public class Location2Activity extends AppCompatActivity {
 
         final ArrayList<Location> infoList = new ArrayList<>();
 
-        infoList.add(new Location("Derry, Maine", "Actual Name: Bangor, Maine", "Derry is a fictional town and a part of Stephen King's fictional Maine topography. " +
-                "Derry has served as the primary setting for a number of his stories such as: IT, Insomnia, Bag of Bones, Dreamcatcher, Fair Extension, 11/22/63, and more. " +
-                "King has acknowledged that Derry is actually his portrayal of Bangor, Maine." +
-                "\n" + "\n" + "Bangor is located in Penobscot County. Bangor has a port of entry at Bangor International Airport, also home to the Bangor Air National Guard Base. " +
-                "Bangor has a humid continental climate, with cold, snowy winters, and warm summers. Outdoor activities in the Bangor City Forest and other nearby parks, forests, and waterways include " +
-                "hiking, sailing, canoeing, hunting, fishing, skiing, and snowmobiling.",
-                "&lt;a href=\"https://en.wikipedia.org/wiki/Derry_(Stephen_King)\"&gt;&lt;/a&gt;"));
+        infoList.add(new Location(getResources().getString(R.string.derryText), getResources().getString(R.string.bangorText),
+                getResources().getString(R.string.derryInfo), getResources().getString(R.string.derryLink)));
 
         LocationAdapter adapter = new LocationAdapter(this, infoList);
 

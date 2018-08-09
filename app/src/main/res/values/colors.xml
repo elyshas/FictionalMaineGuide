@@ -11,4 +11,5 @@
     <color name="black">#000</color>
     <color name="cyanLightAccent">#00BCD4</color>
     <color name="cyanDarkAccent">#0097A7</color>
+    <color name="transparentCover">#aa212121</color>
     </resources>

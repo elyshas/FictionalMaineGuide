@@ -14,6 +14,7 @@ import java.util.ArrayList;
  * Created by elysh on 8/6/2018.
  */
 
+//"Murder, She Wrote": Cabot Cove, Maine *** Actual Location is Kennebunkport, Maine
 public class Location1Activity extends AppCompatActivity {
 
     @Override
@@ -28,14 +29,8 @@ public class Location1Activity extends AppCompatActivity {
 
         final ArrayList<Location> infoList = new ArrayList<>();
 
-        infoList.add(new Location("Cabot Cove, Maine", "Actual Name: Kennebunkport, Maine", "Murder, She Wrote is an American crime drama television series " +
-                "starring Angela Lansbury as mystery writer and amateur detective Jessica Fletcher.  " +
-                "The show revolves around the day-to-day life of Jessica Fletcher, a childless, widowed, retired English teacher who becomes a successful mystery writer. " +
-                "Despite fame and fortune, Jessica remains a resident of Cabot Cove, a small coastal community in Maine, " +
-                "and maintains her links with all of her old friends, never letting her success go to her head." +
-                "\n" + "\n" + "The fictional \"Cabot Cove\" name for the series' coastal town was derived from the name of an actual bay harbor inlet in Kennebunkport, " +
-                "Maine, located near the town's center, on the road where motels and lobster shack dives are located. Kennebunkport is known for its beaches, including long, sandy Goose Rocks Beach and smaller Arundel Beach.",
-                "&lt;a href=\"https://en.wikipedia.org/wiki/Murder,_She_Wrote\"&gt;&lt;/a&gt;"));
+        infoList.add(new Location(getResources().getString(R.string.cabotCoveText), getResources().getString(R.string.kennebunkportText),
+                getResources().getString(R.string.cabotCoveInfo), getResources().getString(R.string.cabotCoveLink)));
 
         LocationAdapter adapter = new LocationAdapter(this, infoList);
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#607D8B"
+    android:background="@color/colorAccent"
     tools:context="com.example.android.fictitiousmaineguide.MainActivity">
 
         <!--Layout for All Linked Images-->
@@ -13,9 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingTop="15dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
+            android:paddingTop="@dimen/padding15"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10">
 
                            <!--Cabot Cove, Maine-->
                 <FrameLayout
@@ -23,8 +23,8 @@
                     android:layout_height="match_parent" >
 
                     <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="202dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/buttonImageHeight"
                         android:src="@drawable/cabot_cove_maine" />
 
                     <TextView
@@ -32,10 +32,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="Cabot Cove, Maine"
-                        android:textColor="#FFF"
-                        android:background="#aa212121"
-                        android:textSize="35sp"
+                        android:text="@string/cabotCoveText"
+                        android:textColor="@color/white"
+                        android:background="@color/transparentCover"
+                        android:textSize="@dimen/buttonImageText"
                         android:textStyle="bold" />
                 </FrameLayout>
 
@@ -43,11 +43,11 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="10dp" >
+                    android:paddingTop="@dimen/padding10" >
 
                     <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="202dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/buttonImageHeight"
                         android:src="@drawable/derry_maine" />
 
                     <TextView
@@ -55,10 +55,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="Derry, Maine"
-                        android:textColor="#FFF"
-                        android:background="#aa212121"
-                        android:textSize="35sp"
+                        android:text="@string/derryText"
+                        android:textColor="@color/white"
+                        android:background="@color/transparentCover"
+                        android:textSize="@dimen/buttonImageText"
                         android:textStyle="bold" />
 
                 </FrameLayout>
@@ -67,11 +67,11 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="10dp">
+                    android:paddingTop="@dimen/padding10">
 
                     <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="202dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/buttonImageHeight"
                         android:gravity="center"
                         android:src="@drawable/dark_score_maine" />
 
@@ -80,10 +80,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="Dark Score Lake, Maine"
-                        android:textColor="#FFF"
-                        android:background="#aa212121"
-                        android:textSize="35sp"
+                        android:text="@string/darkScoreLakeText"
+                        android:textColor="@color/white"
+                        android:background="@color/transparentCover"
+                        android:textSize="@dimen/buttonImageText"
                         android:textStyle="bold" />
                 </FrameLayout>
 
@@ -91,12 +91,12 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="15dp">
+                    android:paddingTop="@dimen/padding10"
+                    android:paddingBottom="@dimen/padding15">
 
                     <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="202dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/buttonImageHeight"
                         android:gravity="center_horizontal"
                         android:src="@drawable/little_tall_island_maine" />
 
@@ -105,10 +105,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="Little Tall Island, Maine"
-                        android:textColor="#FFF"
-                        android:background="#aa212121"
-                        android:textSize="35sp"
+                        android:text="@string/littleTallIslandText"
+                        android:textColor="@color/white"
+                        android:background="@color/transparentCover"
+                        android:textSize="@dimen/buttonImageText"
                         android:textStyle="bold" />
 
                 </FrameLayout>
