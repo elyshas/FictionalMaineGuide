@@ -7,112 +7,134 @@
     android:background="@color/colorAccent"
     tools:context="com.example.android.fictitiousmaineguide.MainActivity">
 
-        <!--Layout for All Linked Images-->
-        <LinearLayout
-            android:id="@+id/mainLayout"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context="com.example.android.fictitiousmaineguide.MainActivity">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            style="@style/CategoryTab"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/padding15"
-            android:paddingLeft="@dimen/padding10"
-            android:paddingRight="@dimen/padding10">
+            android:layout_height="wrap_content" />
 
-                           <!--Cabot Cove, Maine-->
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/buttonImageHeight"
-                        android:src="@drawable/cabot_cove_maine" />
+    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/cabotCove"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="@string/cabotCoveText"
-                        android:textColor="@color/white"
-                        android:background="@color/transparentCover"
-                        android:textSize="@dimen/buttonImageText"
-                        android:textStyle="bold" />
-                </FrameLayout>
+    <!--***DELETE ONCE FRAGMENTS AND TABS ARE WORKING PROPERLY - ALONG WITH PAGE ACTIVITIES, ONCE NO LONGER NEEDED***-->
+        <!--&lt;!&ndash;Layout for All Linked Images&ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/mainLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingTop="@dimen/padding15"-->
+            <!--android:paddingLeft="@dimen/padding10"-->
+            <!--android:paddingRight="@dimen/padding10">-->
 
-                <!--Derry, Maine-->
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="@dimen/padding10" >
+                           <!--&lt;!&ndash;Cabot Cove, Maine&ndash;&gt;-->
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" >-->
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/buttonImageHeight"
-                        android:src="@drawable/derry_maine" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/buttonImageHeight"-->
+                        <!--android:src="@drawable/cabot_cove_maine" />-->
 
-                    <TextView
-                        android:id="@+id/derry"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="@string/derryText"
-                        android:textColor="@color/white"
-                        android:background="@color/transparentCover"
-                        android:textSize="@dimen/buttonImageText"
-                        android:textStyle="bold" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/cabotCove"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/cabotCoveText"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:background="@color/transparentCover"-->
+                        <!--android:textSize="@dimen/buttonImageText"-->
+                        <!--android:textStyle="bold" />-->
+                <!--</FrameLayout>-->
 
-                </FrameLayout>
+                <!--&lt;!&ndash;Derry, Maine&ndash;&gt;-->
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:paddingTop="@dimen/padding10" >-->
 
-                         <!--Dark Score Lake, Maine-->
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="@dimen/padding10">
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/buttonImageHeight"-->
+                        <!--android:src="@drawable/derry_maine" />-->
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/buttonImageHeight"
-                        android:gravity="center"
-                        android:src="@drawable/dark_score_maine" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/derry"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/derryText"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:background="@color/transparentCover"-->
+                        <!--android:textSize="@dimen/buttonImageText"-->
+                        <!--android:textStyle="bold" />-->
 
-                    <TextView
-                        android:id="@+id/darkScoreLake"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="@string/darkScoreLakeText"
-                        android:textColor="@color/white"
-                        android:background="@color/transparentCover"
-                        android:textSize="@dimen/buttonImageText"
-                        android:textStyle="bold" />
-                </FrameLayout>
+                <!--</FrameLayout>-->
 
-                <!--Little Tall Island, Maine-->
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="@dimen/padding10"
-                    android:paddingBottom="@dimen/padding15">
+                         <!--&lt;!&ndash;Dark Score Lake, Maine&ndash;&gt;-->
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:paddingTop="@dimen/padding10">-->
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/buttonImageHeight"
-                        android:gravity="center_horizontal"
-                        android:src="@drawable/little_tall_island_maine" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/buttonImageHeight"-->
+                        <!--android:gravity="center"-->
+                        <!--android:src="@drawable/dark_score_maine" />-->
 
-                    <TextView
-                        android:id="@+id/littleTallIsland"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="@string/littleTallIslandText"
-                        android:textColor="@color/white"
-                        android:background="@color/transparentCover"
-                        android:textSize="@dimen/buttonImageText"
-                        android:textStyle="bold" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/darkScoreLake"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/darkScoreLakeText"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:background="@color/transparentCover"-->
+                        <!--android:textSize="@dimen/buttonImageText"-->
+                        <!--android:textStyle="bold" />-->
+                <!--</FrameLayout>-->
 
-                </FrameLayout>
+                <!--&lt;!&ndash;Little Tall Island, Maine&ndash;&gt;-->
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:paddingTop="@dimen/padding10"-->
+                    <!--android:paddingBottom="@dimen/padding15">-->
 
-            </LinearLayout>
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/buttonImageHeight"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:src="@drawable/little_tall_island_maine" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/littleTallIsland"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/littleTallIslandText"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:background="@color/transparentCover"-->
+                        <!--android:textSize="@dimen/buttonImageText"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</FrameLayout>-->
+
+            <!--</LinearLayout>-->
 
 </ScrollView>

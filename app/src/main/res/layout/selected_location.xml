@@ -10,12 +10,6 @@
     android:paddingLeft="@dimen/padding10"
     android:paddingRight="@dimen/padding10">
 
-    <!--<ImageView-->
-        <!--android:id="@+id/locationImage"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_gravity="center" />-->
-
     <TextView
         android:id="@+id/locationName"
         android:layout_width="match_parent"
