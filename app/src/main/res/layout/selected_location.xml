@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:background="@color/colorAccent"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/padding10"
     android:paddingRight="@dimen/padding10">
 
@@ -16,9 +16,9 @@
         android:layout_height="match_parent"
         android:paddingTop="@dimen/padding10"
         android:textColor="@color/white"
-        android:textStyle="bold"
         android:textSize="@dimen/locationNameText"
-        tools:text="@string/fictionalLocationToolText"/>
+        android:textStyle="bold"
+        tools:text="@string/fictionalLocationToolText" />
 
     <TextView
         android:id="@+id/locationActualName"
@@ -28,7 +28,7 @@
         android:textColor="@color/lightGray"
         android:textSize="@dimen/locationActualNameText"
         android:textStyle="italic"
-        tools:text="@string/actualLocationToolText"/>
+        tools:text="@string/actualLocationToolText" />
 
     <TextView
         android:id="@+id/locationInfo"
@@ -37,17 +37,17 @@
         android:paddingTop="@dimen/padding10"
         android:textColor="@color/white"
         android:textSize="@dimen/locationInfoText"
-        tools:text="@string/locationInfoToolText"/>
+        tools:text="@string/locationInfoToolText" />
 
     <TextView
         android:id="@+id/webLink"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="@dimen/padding15"
+        android:linksClickable="true"
         android:paddingBottom="@dimen/padding30"
+        android:paddingTop="@dimen/padding15"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/locationSiteText"
-        android:linksClickable="true"
         tools:text="@string/webLinkToolText" />
 
 </LinearLayout>
