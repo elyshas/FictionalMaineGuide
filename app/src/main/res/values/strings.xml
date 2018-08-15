@@ -5,7 +5,7 @@
     <string name="fictionalLocationToolText">Fake Name, Maine</string>
     <string name="actualLocationToolText">Actual Location: Derp</string>
     <string name="locationInfoToolText">Blah blah blah information about this fictional location (movie/story/show/etc.). Then info on the actual location it\'s based off of.</string>
-    <string name="mapLinkToolText">www.ExampleWebsiteName.com</string>
+    <string name="webLinkToolText">www.ExampleWebsiteInfo.com</string>
 
     <!--Fictional Location Names-->
     <string name="cabotCoveText">Cabot Cove, Maine</string>
@@ -30,5 +30,8 @@
     <string name="derryLink">https://en.wikipedia.org/wiki/Derry_(Stephen_King)</string>
     <string name="darkScoreLink">http://stephenkingsmaine.com/dark-score-lake</string>
     <string name="littleTallLink">https://www.kingsleighinn.com/southwestharborinformation.html</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

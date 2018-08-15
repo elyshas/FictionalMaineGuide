@@ -12,13 +12,13 @@ public class Location {
 
     private String mLocationInfo;
 
-    private String mMapLink;
+    private String mWebLink;
 
-    public Location(String FictionalName, String ActualName, String LocationInfo, String MapLink){
+    public Location(String FictionalName, String ActualName, String LocationInfo, String WebLink){
         mFictionalName = FictionalName;
         mActualName = ActualName;
         mLocationInfo = LocationInfo;
-        mMapLink = MapLink;
+        mWebLink = WebLink;
     }
 
     public String getFictionalName() {
@@ -33,8 +33,8 @@ public class Location {
         return mLocationInfo;
     }
 
-    public String getMapLink() {
-        return mMapLink;
+    public String getWebLink() {
+        return mWebLink;
     }
 
 }

@@ -46,7 +46,7 @@
         tools:text="@string/locationInfoToolText"/>
 
     <TextView
-        android:id="@+id/mapLink"
+        android:id="@+id/webLink"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="@dimen/padding15"
@@ -54,6 +54,6 @@
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/locationSiteText"
         android:linksClickable="true"
-        tools:text="@string/mapLinkToolText" />
+        tools:text="@string/webLinkToolText" />
 
 </LinearLayout>
