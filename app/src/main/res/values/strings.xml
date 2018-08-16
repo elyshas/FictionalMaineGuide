@@ -5,7 +5,12 @@
     <string name="fictionalLocationToolText">Fake Name, Maine</string>
     <string name="actualLocationToolText">Actual Location: Derp</string>
     <string name="locationInfoToolText">Blah blah blah information about this fictional location (movie/story/show/etc.). Then info on the actual location it\'s based off of.</string>
-    <string name="mapLinkToolText">www.ExampleWebsiteName.com</string>
+
+    <!--TAB Names-->
+    <string name="cabotCoveTab">Cabot Cove</string>
+    <string name="derryTab">Derry</string>
+    <string name="darkScoreLakeTab">Dark Score</string>
+    <string name="littleTallIslandTab">Little Tall</string>
 
     <!--Fictional Location Names-->
     <string name="cabotCoveText">Cabot Cove, Maine</string>

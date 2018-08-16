@@ -3,7 +3,6 @@ package com.example.android.fictitiousmaineguide;
 import android.content.Context;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
-import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,12 +41,6 @@ public class LocationAdapter extends ArrayAdapter<Location> {
 
         TextView locationInfoTextView = listItemView.findViewById(R.id.locationInfo);
         locationInfoTextView.setText(currentLocation.getLocationInfo());
-
-
-        TextView mapLinkTextView = listItemView.findViewById(R.id.mapLink);
-        mapLinkTextView.setMovementMethod(LinkMovementMethod.getInstance());
-        mapLinkTextView.setText(Html.fromHtml(currentLocation.getMapLink()));
-//        Linkify.addLinks(mapLinkTextView, Linkify.ALL);
 
         return listItemView;
     }

@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:background="@color/colorAccent"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/padding10"
     android:paddingRight="@dimen/padding10">
-
-    <!--<ImageView-->
-        <!--android:id="@+id/locationImage"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_gravity="center" />-->
 
     <TextView
         android:id="@+id/locationName"
@@ -22,9 +16,9 @@
         android:layout_height="match_parent"
         android:paddingTop="@dimen/padding10"
         android:textColor="@color/white"
-        android:textStyle="bold"
         android:textSize="@dimen/locationNameText"
-        tools:text="@string/fictionalLocationToolText"/>
+        android:textStyle="bold"
+        tools:text="@string/fictionalLocationToolText" />
 
     <TextView
         android:id="@+id/locationActualName"
@@ -34,26 +28,16 @@
         android:textColor="@color/lightGray"
         android:textSize="@dimen/locationActualNameText"
         android:textStyle="italic"
-        tools:text="@string/actualLocationToolText"/>
+        tools:text="@string/actualLocationToolText" />
 
     <TextView
         android:id="@+id/locationInfo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="@dimen/padding10"
+        android:paddingBottom="@dimen/padding30"
         android:textColor="@color/white"
         android:textSize="@dimen/locationInfoText"
-        tools:text="@string/locationInfoToolText"/>
-
-    <TextView
-        android:id="@+id/mapLink"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="@dimen/padding15"
-        android:paddingBottom="@dimen/padding30"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/locationSiteText"
-        android:linksClickable="true"
-        tools:text="@string/mapLinkToolText" />
+        tools:text="@string/locationInfoToolText" />
 
 </LinearLayout>
