@@ -35,19 +35,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="@dimen/padding10"
+        android:paddingBottom="@dimen/padding30"
         android:textColor="@color/white"
         android:textSize="@dimen/locationInfoText"
         tools:text="@string/locationInfoToolText" />
-
-    <TextView
-        android:id="@+id/webLink"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:linksClickable="true"
-        android:paddingBottom="@dimen/padding30"
-        android:paddingTop="@dimen/padding15"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/locationSiteText"
-        tools:text="@string/webLinkToolText" />
 
 </LinearLayout>

@@ -36,7 +36,7 @@ public class Location2Fragment extends Fragment {
         final ArrayList<Location> infoList = new ArrayList<>();
 
         infoList.add(new Location(getResources().getString(R.string.derryText), getResources().getString(R.string.bangorText),
-                getResources().getString(R.string.derryInfo), getResources().getString(R.string.derryLink)));
+                getResources().getString(R.string.derryInfo)));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), infoList);
 

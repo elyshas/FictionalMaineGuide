@@ -42,12 +42,6 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         TextView locationInfoTextView = listItemView.findViewById(R.id.locationInfo);
         locationInfoTextView.setText(currentLocation.getLocationInfo());
 
-
-        TextView webLinkTextView = listItemView.findViewById(R.id.webLink);
-        webLinkTextView.setMovementMethod(LinkMovementMethod.getInstance());
-        webLinkTextView.setText(Html.fromHtml(currentLocation.getWebLink()));
-        //DO LATER PERHAPS:  Linkify.addLinks(webLinkTextView, Linkify.ALL);
-
         return listItemView;
     }
 }

@@ -36,7 +36,7 @@ public class Location1Fragment extends Fragment {
         final ArrayList<Location> infoList = new ArrayList<>();
 
         infoList.add(new Location(getResources().getString(R.string.cabotCoveText), getResources().getString(R.string.kennebunkportText),
-                getResources().getString(R.string.cabotCoveInfo), getResources().getString(R.string.cabotCoveLink)));
+                getResources().getString(R.string.cabotCoveInfo)));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), infoList);
 

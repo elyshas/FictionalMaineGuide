@@ -36,7 +36,7 @@ public class Location3Fragment extends Fragment {
         final ArrayList<Location> infoList = new ArrayList<>();
 
         infoList.add(new Location(getResources().getString(R.string.darkScoreLakeText), getResources().getString(R.string.flagstaffText),
-                getResources().getString(R.string.darkScoreLakeInfo), getResources().getString(R.string.darkScoreLink)));
+                getResources().getString(R.string.darkScoreLakeInfo)));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), infoList);
 

@@ -36,7 +36,7 @@ public class Location4Fragment extends Fragment {
         final ArrayList<Location> infoList = new ArrayList<>();
 
         infoList.add(new Location(getResources().getString(R.string.littleTallIslandText), getResources().getString(R.string.southwestHarborText),
-                getResources().getString(R.string.littleTallIslandInfo), getResources().getString(R.string.littleTallLink)));
+                getResources().getString(R.string.littleTallIslandInfo)));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), infoList);
 

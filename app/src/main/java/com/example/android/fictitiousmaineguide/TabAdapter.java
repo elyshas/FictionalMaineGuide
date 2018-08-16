@@ -9,7 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by elysh on 8/15/2018.
  */
 
-// Code bits taken from Miwok App and video lesson ("Tabs and ViewPager (Android Development Patterns Ep 9")
+/** Code bits taken from Miwok App, provided video lesson ("Tabs and ViewPager (Android Development Patterns Ep 9"),
+ * and and https://guides.codepath.com/android/google-play-style-tabs-using-tablayout#sliding-tabs-layout **/
 public class TabAdapter extends FragmentPagerAdapter {
 
     private Context mContext;
